@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+form {
+	z-index: 1000;	
+}
+
+
+/*--form--*/
+
+.wufoo .info h2 {
+	font-size: 0;
+	height: 0px;
+	width: 0px;
+	visibility: hidden;
+}
+
+.wufoo li {
+	width: 96%;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+form li.complex div span.full {
+	width: 95%;
+}
+
+form li.complex div span.full input, form li.complex div span.full select, form li.complex div span.left input, form li.complex div span.right input, form li.complex div span.left select, form li.complex div span.right select {
+width: 95%;
+}
+
+
+
+.wufoo input.medium, select.medium {
+    width: 95%;
+}
+
+
+.wufoo input.text {
+	font-family: monospace;
+	display: inline;
+	height: 28px;
+	padding: 8px;
+	margin-bottom: 3px;
+	margin-top: 9px;
+	font-size: 1.6em;
+	line-height: 18px;
+	color: #333;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: url(../img/field-bg.gif);
+	font-weight: 500;
+	background-repeat: repeat-x;
+	background-position: top;
+	text-overflow: ellipsis;
+	overflow: visible;
+	white-space: normal;
+}
+
+
+.wufoo textarea.textarea.medium {
+  font-family: monospace;
+  display: inline-block;
+  height: 100px;
+  min-width: 95%;
+  max-width: 95%;
+  padding: 4px;
+  margin-bottom: 3px;
+  margin-top: 9px;
+  font-size: 1.6em;
+  line-height: 18px;
+  color: #333;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url(../img/field-bg.gif);
+  font-weight: 500;
+}
+
+span.symbol {
+    font-size: 120%;
+    line-height: 50px;
+}
+
+.safari .wufoo select.select.addr {
+	margin-top: 10px;	
+}
+
+.wufoo li.focused {
+	
+}

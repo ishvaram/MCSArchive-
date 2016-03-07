@@ -1,0 +1,759 @@
+
+/* Curtain.js - Example page */
+
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+body{line-height:1}ol,ul{list-style:none}
+
+
+/* Base Style ***********************************************************************************/
+body {
+    font: 16px/1.2 Georgia, "Times New Roman", Times, serif;;
+    color:#000000;
+	position: relative;
+	/*padding-top: 90px;*/
+}
+
+
+p {
+	/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+
+	line-height: 1.5em;
+	text-align: justify;
+	letter-spacing: -1px;
+	color:#000000;
+}
+
+a {
+	color:#FFF;
+}
+a:hover {
+	color:#CCC
+}
+
+img {
+	max-width:100%
+	display: inline-block;
+margin: 4px;
+padding: 5px;
+background-color: white;
+line-height: 0px;
+border: 1px solid #C0C1C2;
+-moz-border-radius: 3px;
+border-radius: 3px;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+
+
+
+
+
+h1{
+	font-size: 200px;
+	color:#fff;
+	font-family: "LeagueGothicRegular";
+	letter-spacing: 0.18em;
+	width: 100%;
+	text-align: center;
+	display: block;
+	text-shadow: -1px 1px #9c3328, -2px 2px #9c3328, -3px 3px #9c3328, -4px 4px #9c3328, -5px 5px #9c3328;
+}
+h2{
+	font-size:40px;
+	color:#fff;
+	font-family: "CoffeeServiceRegular";
+	text-align: center;
+	display: block;
+	font-weight: 100;
+	text-shadow: -1px 1px #9c3328, -2px 2px #9c3328;
+	padding-bottom: 30px;
+}
+
+h3{
+	font-size:32px;
+	margin-bottom:12px;
+	color:#000000;
+	padding-top:8px;
+	font-family: "LeagueGothicRegular";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	text-shadow: -1px 1px #999999, -2px 2px #999999;
+}
+
+
+
+
+
+
+h3 small {
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 0px;
+	text-shadow: 0 0 transparent;
+}
+
+
+h4 {
+	font-size: 2.4em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: "CoffeeServiceRegular";
+}
+
+h5 {
+	font-size: 2em;
+	font-family: "LeagueGothicRegular";
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	text-shadow: -1px 1px #fff, -2px 2px #fff;
+}
+
+
+h6 {
+	font-family: "LeagueGothicRegular";
+	font-size: 32px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: -1px 1px #9c3328, -2px 2px #9c3328;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+
+.content-wrapper {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.well p {
+	margin-bottom: 25px;
+}
+
+
+.note {
+	font-size: 1em;
+	/*font-style: italic;*/
+	color: #C33;
+	padding-right: 30px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+
+.center {
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+
+.up50 {
+	margin-top: -50px;
+}
+
+
+
+/* Cover Style ***********************************************************************************/
+
+
+#home {
+	background-image: url(../img/page-background.jpg);
+	background-repeat: repeat;
+}
+
+.last-letter {
+	letter-spacing: 0px;
+}
+
+
+#main-text-box {
+
+}
+
+
+#main-text-box h3 {
+	color: white;
+	text-align: center;
+	display: block;
+	text-shadow: -1px 1px #9C3328, -2px 2px #9C3328;
+	margin: 0px;
+	padding: 0px;
+}
+
+#main-text-box h3 small {
+	color: white;
+	text-align: center;
+	display: block;
+	text-shadow: -1px 1px #9C3328, -2px 2px #9C3328;
+	font-size: 66px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#main-text-box p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	line-height: 36px;
+	font-weight: 500;
+	color: #FFF;
+	letter-spacing: 0.4px;
+	text-shadow: -1px 1px #9c3328;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-style: italic;
+}
+
+
+
+
+
+/* Who Style ***********************************************************************************/
+
+
+#who {
+	background-image: url(../img/page-background.jpg);
+	background-repeat: repeat;
+}
+
+#who ul li {
+	font-family: monospace;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+	list-style-image: url(../img/star-top-border.png);
+	margin-left: 30px;
+	padding-right: 15px;
+	padding-left: 10px;
+	list-style-position: outside;
+	margin-right: 0px;
+	letter-spacing: -1px;
+}
+
+#who ul li strong {
+	font-family: Baskerville, Georgia, "Times New Roman", Times, serif;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 700;
+}
+
+
+#locations {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+
+/* What Style ***********************************************************************************/
+
+
+#what {
+	background-image: url(../img/page-background.jpg);
+	background-repeat: repeat;
+}
+
+#what ul {
+	margin-bottom: 50px;
+}
+
+
+#what ul li {
+	font-family: monospace;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	list-style-image: url(../img/star-top-border.png);
+	margin-left: 50px;
+	padding-right: 15px;
+	padding-left: 10px;
+	list-style-position: outside;
+	margin-right: 0px;
+}
+
+#what ol li {
+	font-family: monospace;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	padding-right: 15px;
+	padding-left: 10px;
+	margin-right: 0px;
+	list-style-type: decimal;
+}
+
+#what a {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+#what a:hover {
+	
+}
+
+#what img {
+	margin-top: -30px;
+	padding-bottom: 10px;
+}
+
+
+.genuine {
+	margin-top: 60px;
+}
+
+
+
+/* Why Style ***********************************************************************************/
+
+
+#why {
+	background-image: url(../img/page-background.jpg);
+	background-repeat: repeat;
+}
+
+#why p strong {
+	color: #c84235;
+}
+
+
+#why p.note {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.regulations p {
+	font-family: monospace;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+
+#why ol li {
+	font-family: monospace;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#the-law p {
+	font-family: "CoffeeServiceRegular", script;
+	font-size: 2em;
+	color: #c84235;
+}
+
+.ass {
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+
+
+/* Contact Styles ***********************************************************************************/
+
+#top-info {
+	margin-top: 75px;
+}
+
+#top-info h4 {
+	color: #FFF;
+	font-family: Baskerville, Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#top-info p {
+	color: #FFF;
+	font-family: Baskerville, Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-style: italic;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+}
+
+
+.bold {
+	font-family: "CoffeeServiceRegular", script;
+	font-size: 28px;
+	text-shadow: -1px 1px #999999, -2px 2px #303030;
+	font-weight: 100;
+}
+
+h4 strong {
+	color: #fff;
+	text-shadow: -1px 1px #999999;
+}
+
+#top-info h6 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#contact {
+	background-image: url(../img/back-cover2.jpg);
+	background-repeat: repeat;
+}
+
+#bottom-tagline {
+	position: absolute;
+	bottom: 20px;
+}
+
+#tape {
+	margin-bottom: -65px;
+	height: 85px;
+	width: 100%;
+	text-align: center;
+}
+
+p.copyright {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 500;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+p.copyright a {
+	text-decoration: underline;
+}
+
+p.copyright a:hover {
+	color: #333333;	
+}
+
+
+/* Form Styles ************************************/
+
+
+#wufoo-m7x3r3 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-image: url(../img/back3.jpg);
+	background-repeat: repeat;
+	margin-right: 100px;
+	margin-left: 100px;
+	-moz-box-shadow: 0 0 5px 0px #333;
+	-webkit-box-shadow: 0 0 5px 0px#333;
+	box-shadow: 0 0 5px 0px #333;
+}
+
+
+form li.complex div span.full input, form li.complex div span.full select, form li.complex div span.left input, form li.complex div span.right input, form li.complex div span.left select, form li.complex div span.right select {
+width: 95%;
+}
+
+
+
+
+
+
+/* Curtain Structure and Styles ***********************************************************************************/
+
+
+
+
+/* Sliding panels */
+.curtains>li {
+    box-shadow: 0 1px 14px 3px #333;
+}
+
+.curtains>li:nth-child(2n+1) {
+    background: #EEE;
+}
+
+.fixed {
+    position: fixed;
+    top: 150px;
+    left: 40px;
+    width: 200px;
+}
+
+.content-wrapper {
+	padding-top: 70px;
+	padding-right: 20px;
+	padding-bottom: 70px;
+	padding-left: 20px;
+	/* background-image: url(../img/page-background.jpg); */
+	/*background-repeat: repeat; */
+}
+
+
+/* right menu */
+.menu {
+    z-index: 2;
+    position: fixed;
+    bottom:0;
+    text-align: right;
+    left: 0;
+}
+
+.menu button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    color: #c73c2c;
+    text-decoration: none;
+    border:0;
+    cursor:pointer;
+}
+
+
+/* Curtain-links-menu */
+.curtain-links-menu{
+    display:none;
+    position:fixed;
+    z-index:2;
+    right:0px;
+    top:0px;
+    padding:10px;
+}
+
+.curtain-links-menu a{
+    color:#e6e6e6;
+    font-size:12px;
+    text-decoration:none;
+}
+.curtain-links-menu a:hover{
+    text-decoration:underline;
+}
+
+.curtains{
+    width: 100%;
+    z-index:1;
+    position:relative;
+}
+
+.curtains>li{
+    background: white;
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+.curtains>li:first-child{z-index:2;}
+
+
+/*.menu{
+    -webkit-backface-visibility:hidden; /* Remove if you got display issues */
+	
+
+@media (max-width: 980px) {
+	
+
+  
+#main-text-box h3 {
+	font-size: 56px;
+  }
+	
+#main-text-box h3 small {
+	font-size: 54px;
+}
+
+
+#main-text-box p {
+	padding-right: 7%;
+	padding-left: 7%;
+}
+
+
+h4 {
+font-size: 2.2em;
+}
+
+  
+}		
+	
+@media (max-width: 768px) {
+	
+h2 {
+	font-size: 32px;
+  }
+  
+#main-text-box h3 {
+	font-size: 35px;
+  }
+	
+#main-text-box h3 small {
+	font-size: 34px;
+}
+
+#main-text-box p {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+h4 {
+font-size: 2.0em;
+}
+
+
+#wufoo-m7x3r3 {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+  
+}	
+
+
+@media (max-width: 480px) {
+	
+	
+	
+	
+h2 {
+	  font-size: 24px;
+  }
+  
+  h3 small {
+	font-size: 45px;
+  }
+	
+#main-text-box h3 {
+	font-size: 28px;
+  }
+  
+#main-text-box h3 small {
+	font-size: 29px;
+}
+
+h4 {
+font-size: 1.8em;
+}
+
+#main-text-box p {
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.6em;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+p strong {
+	text-align: left;
+}
+
+#what ul li {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-right: 0px;
+	padding-left: 10px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+
+#what ol li {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+
+#the-law p {
+	font-size: 1.6em;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.regulations p {
+	font-size: 1em;
+	line-height: 1.3em;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+#why ol li {
+	font-size: 0.9em;
+	line-height: 1.3em;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+#wufoo-m7x3r3 {
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+
+  
+}	
+
+
+	
+	

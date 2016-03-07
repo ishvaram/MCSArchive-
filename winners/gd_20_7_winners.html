@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/slidingletters_style.css" />
+		
+    </head>
+    <body bgcolor="#000000">
+    <div class="sl_examples">
+			<a href="#" id="example1" data-hover="Sai&nbsp; Vidya&nbsp; Swaminathan">Star &nbsp; Speaker</a>
+
+			<a href="#" id="example2" data-hover="Shalini">Star&nbsp; Speaker</a>
+			
+		</div>
+		
+		
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverwords.js"></script>
+		
+		<script type="text/javascript">
+			$(window).load(function(){
+				
+				$('#example1').hoverwords({ delay:50 });
+
+				$('#example2').hoverwords({ delay:50 });
+
+				$('#example3').hoverwords({ delay:50 });
+				
+				
+			});
+		</script>
+    </body>
+</html>

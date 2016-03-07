@@ -1,0 +1,59 @@
+﻿@charset "UTF-8";
+/*
+ * Example of RSS Ticker Styling
+ *
+ */
+
+body {
+
+font-family: 'Electrolize',Arial,sans-serif;
+
+}
+ul
+{
+		height:150px;
+}
+li
+{
+	height:150px;
+}
+.rssFeed {
+font-family: 'Electrolize',Arial,sans-serif;
+	width: 400px;
+	margin-bottom: 2em;
+	border: 1px solid #CCCCCC;
+		margin-top: 10px;
+		font-size: 12px;
+		border-radius: 10px;
+		padding:10px 10px 10px 10px;
+
+		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+		box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.rssFeed a {
+	color:#009def;
+	text-decoration: none;
+	font-size:16px;
+	font-weight:600;
+
+
+}
+
+.rssFeed a:hover {
+	color: #43b7ea;
+	text-decoration: underline;
+
+}
+
+.rssHeader { padding: 0.2em 0; display:none}
+
+.rssRow h4, .rssRow p, .rssRow div {
+	margin: 0;
+	padding: 0.5em;
+	font-size:14px;
+	font-weight:100;
+	color:#666
+}
+
+
